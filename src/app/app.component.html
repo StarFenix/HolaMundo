@@ -110,7 +110,7 @@
   }
 
   .card.card-small {
-    height: 16px;
+    height: 45px;
     width: 168px;
   }
 
@@ -305,6 +305,8 @@
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
+
+  
   <span>Welcome</span>
     <div class="spacer"></div>
     <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
@@ -316,7 +318,7 @@
 </div>
 
 <div class="content" role="main">
-
+  
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -337,9 +339,15 @@
     </svg>
 
   </div>
+<br><br>
+<app-encabezado></app-encabezado>
+<br>
+
+<!-- ROUTING -->
+<router-outlet></router-outlet>
 
   <!-- Resources -->
-  <h2>Resources</h2>
+  <!-- <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
   <div class="card-container">
@@ -367,9 +375,10 @@
     </a>
 
   </div>
-
+-->
   <!-- Next Steps -->
-  <h2>Next Steps</h2>
+  <!--
+      <h2>Next Steps</h2>
   <p>What do you want to do next with your app?</p>
 
   <input type="hidden" #selection>
@@ -411,8 +420,9 @@
       <span>Build for Production</span>
     </div>
   </div>
-
+-->
   <!-- Terminal -->
+  <!--
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
@@ -421,7 +431,15 @@
       <pre *ngSwitchCase="'test'">ng test</pre>
       <pre *ngSwitchCase="'build'">ng build --prod</pre>
   </div>
+ -->
+  <!-- COMPONENTES -->
+  <!--<app-titulos></app-titulos>-->
+  <!-- <app-directivas></app-directivas> -->
+  <!--  <app-ejemplo></app-ejemplo> -->
+  <!--  <app-pipes></app-pipes> -->
 
+  
+  
   <!-- Links -->
   <div class="card-container">
     <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
@@ -500,7 +518,7 @@
       </svg>
     </a>
   </div>
-
+  
   <!-- Footer -->
   <footer>
       Love Angular?&nbsp;
@@ -521,6 +539,8 @@
 
 </div>
 
+
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -528,7 +548,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-
-<router-outlet></router-outlet>

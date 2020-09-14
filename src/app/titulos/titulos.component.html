@@ -1,0 +1,19 @@
+<h4>Welcome {{alumno.nombre}} {{alumno.apellido}}</h4>
+
+<!--<img [src]="imagen" alt="" width="45px" height="45px">
+<input type="text" [(ngModel)]="inputNuevo">
+<p>{{inputNuevo}}</p>-->
+<br>
+    <input type="text" class="form-control" placeholder="Email" (keydown)="iniciar($event)" [(ngModel)]="email">
+
+    <input type="password" class="form-control" placeholder="Password" (ngModelChange)="escribirModelo()" [(ngModel)]="password">
+
+<br><br>
+<button type="button" class="btn btn-success" (click)="iniciar($event)">Iniciar</button>
+<button type="button" class="btn btn-warning" (dblclick)="llamarAlert()">Alerta</button>
+
+<!--<br><br>
+<input type="text" (input)="escribir($event)"> 
+<input type="text" (focus)="coloreaFondo($event)">-->
+<br><br>
+<img src="https://hipertextual.com/files/2015/09/googles-new-logo-.gif?width=1200&enable=upscale" width="600px" height="350px" (mouseenter)="cambiarTam($event)" (mouseleave)="incrementarTam($event)" alt="">

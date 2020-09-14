@@ -1,0 +1,54 @@
+<!-- -------ngIf-------------------------- -->
+<!------------------------------------------->
+<!-- <div *ngIf = "!cargando">  
+    <h3>Terminó de cargar</h3>
+</div>
+<img *ngIf = "cargando" src="https://i.pinimg.com/originals/78/e8/26/78e826ca1b9351214dfdd5e47f7e2024.gif" alt="">
+<br>
+<button (click) = "alternar()" >Alternar</button> -->
+
+<!-- -------ngFor-------------------------- -->
+<!------------------------------------------->
+
+ <!-- <div *ngFor="let nombre of nombres">
+    <p>Hola, soy: {{nombre}}</p>
+ </div> 
+<br> 
+ <div *ngFor= "let prods of productos" class="productos">
+    <p>Nombre: {{prods.nombre}}</p>
+    <p>Stock: {{prods.stock}}</p>
+    <p>Fabricante: {{prods.fabricante}}</p>
+    <p>Caducidad: {{prods.caducidad}}</p>
+ </div>-->
+
+ <!-- -------ngSwitch-------------------------- -->
+<!------------------------------------------------>
+<!-- <br>
+<div [ngSwitch]="pestana" class="tab">
+    <button (click)="cambiarPestana('perfil')">Perfil</button>
+    <button (click)="cambiarPestana('puntos')">Puntos</button>
+    <button (click)="cambiarPestana('info')">Info</button>
+<br>
+    <div class="tabCont">
+        <p *ngSwitchCase ="'perfil'">El Perfil</p>
+        <p *ngSwitchCase ="'puntos'">Los puntos</p>
+        <p *ngSwitchCase ="'info'">La información</p>
+        <p *ngSwitchDefault>Selecciona un botón</p>
+    </div>
+</div> -->
+
+<!-- ---------ngClass-------------------------- -->
+<!------------------------------------------------>
+<br>
+<button type="button" class="btn btn-info" (click)="alternarFondo()">Alternar</button>
+<br>
+<div [ngClass]="{'cuadrado': mostrarCuadrado}">
+    <p>Este es un cuadrado</p>
+</div>
+
+<div *ngFor= "let prods of productos" class="productos">
+    <p  [ngClass]="{'textImport': prods.importante, 'bigText': prods.texto}">Nombre: {{prods.nombre}}</p>
+    <p>Stock: {{prods.stock}}</p>
+    <p>Fabricante: {{prods.fabricante}}</p>
+    <p [class.textImport]="prods.importante">Caducidad: {{prods.caducidad}}</p>
+ </div>

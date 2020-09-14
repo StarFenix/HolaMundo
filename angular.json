@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "HolaMundo"
+    }
+  },
+  "defaultProject": "HolaMundo",
+  "cli": {
+    "analytics": "5ac2e0b2-42ef-4aa9-8a29-7c2b439b1284"
+  }
 }
